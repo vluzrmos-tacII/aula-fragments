@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <fragment
+            android:id="@+id/fragment_top_left"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            class="br.com.vluzrmos.aulafragments.TopLeft"
+            android:name="br.com.vluzrmos.aulafragments.TopLeft"
+            tools:layout="@layout/fragment_top_left"/>
+
+        <fragment
+            android:id="@+id/fragment_top_right"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            class="br.com.vluzrmos.aulafragments.TopRight"
+            android:name="br.com.vluzrmos.aulafragments.TopRight"
+            tools:layout="@layout/fragment_top_left" />
+            
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <fragment
+            android:id="@+id/fragment_bottom_left"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            class="br.com.vluzrmos.aulafragments.BottomLeft"
+            android:name="br.com.vluzrmos.aulafragments.BottomLeft"
+            tools:layout="@layout/fragment_top_left" />
+
+        <fragment
+            android:id="@+id/fragment_bottom_right"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            class="br.com.vluzrmos.aulafragments.BottomRight"
+            android:name="br.com.vluzrmos.aulafragments.BottomRight"
+            tools:layout="@layout/fragment_top_left" />
+
+    </LinearLayout>
+
+</LinearLayout>
